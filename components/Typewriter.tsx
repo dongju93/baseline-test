@@ -7,7 +7,7 @@ interface TypewriterProps {
     delay?: number;
 }
 
-export default function Typewriter({ text, delay = 150 }: TypewriterProps) {
+export default function Typewriter({ text, delay = 50 }: TypewriterProps) {
     const [typing, setTyping] = useState("");
     useEffect(() => {
         let currentIndex = 0;
